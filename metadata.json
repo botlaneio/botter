@@ -1,0 +1,8 @@
+{
+  "name": "BotLane",
+  "description": "Lane runs client reporting, lead follow-up and invoice follow-up for you. You just approve.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
