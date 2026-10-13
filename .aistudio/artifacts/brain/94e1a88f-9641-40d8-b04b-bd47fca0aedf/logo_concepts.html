@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BotLane — 5 Symmetrical Logo Concepts</title>
+  <style>
+    :root {
+      --bg: #0d0d0f;
+      --card-bg: #141416;
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text-main: #f5f5f7;
+      --text-muted: #86868b;
+      --accent-red: #ff453a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+      padding: 40px 24px;
+      line-height: 1.5;
+    }
+    .header {
+      max-width: 1040px;
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      background: rgba(255, 69, 58, 0.12);
+      color: var(--accent-red);
+      border: 1px solid rgba(255, 69, 58, 0.25);
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .card:hover {
+      border-color: rgba(255, 255, 255, 0.18);
+      transform: translateY(-2px);
+    }
+    .preview-box {
+      width: 180px;
+      height: 180px;
+      background: #1a1a1d;
+      border-radius: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08), 0 20px 40px -15px rgba(0, 0, 0, 0.6);
+      margin-bottom: 24px;
+    }
+    .preview-box svg {
+      width: 120px;
+      height: 120px;
+    }
+    .concept-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+    .concept-tagline {
+      font-size: 12px;
+      color: var(--accent-red);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .concept-desc {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      text-align: center;
+      line-height: 1.6;
+    }
+    .principles-list {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      width: 100%;
+      font-size: 12px;
+      color: #a1a1a6;
+      list-style: none;
+    }
+    .principles-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .bullet {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent-red);
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="badge">Identity Exploration</div>
+    <h1>Five Symmetrical Logo Concepts for BotLane</h1>
+    <p class="subtitle">
+      Formulated exclusively around our brand pillars: rigorous bilateral symmetry, intentional negative space, architectural balance, and the signature glowing crimson core.
+    </p>
+  </div>
+
+  <div class="grid">
+    <!-- CONCEPT 1 -->
+    <div class="card">
+      <div class="preview-box">
+        <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="c1-glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <rect x="22" y="26" width="22" height="68" rx="8" fill="#2c2c30" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+          <line x1="33" y1="38" x2="33" y2="82" stroke="rgba(255,255,255,0.12)" stroke-width="2" stroke-linecap="round"/>
+          <rect x="76" y="26" width="22" height="68" rx="8" fill="#2c2c30" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+          <line x1="87" y1="38" x2="87" y2="82" stroke="rgba(255,255,255,0.12)" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="60" cy="60" r="8" fill="#ff453a" filter="url(#c1-glow)"/>
+          <circle cx="60" cy="60" r="3.5" fill="#ffffff"/>
+        </svg>
+      </div>
+      <div class="concept-title">1. The Dual Conduits</div>
+      <div class="concept-tagline">Bilateral Lanes + Central Core</div>
+      <p class="concept-desc">
+        Two mirrored monolithic titanium pillars framing a calibrated central negative-space canyon. Floating in the dead center is BotLane's glowing crimson eye—the single point where automated workflows converge for human sign-off.
+      </p>
+      <ul class="principles-list">
+        <li><span class="bullet"></span> Perfect 1:1 horizontal mirror symmetry</li>
+        <li><span class="bullet"></span> Active negative space acts as the central corridor</li>
+        <li><span class="bullet"></span> Embodies parallel bot execution with centered approval</li>
+      </ul>
+    </div>
+
+    <!-- CONCEPT 2 -->
+    <div class="card">
+      <div class="preview-box">
+        <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="c2-glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <linearGradient id="c2-tile" x1="0" y1="0" x2="0" y2="120" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#26262a"/>
+              <stop offset="1" stop-color="#18181b"/>
+            </linearGradient>
+          </defs>
+          <rect x="14" y="14" width="92" height="92" rx="26" fill="url(#c2-tile)" stroke="rgba(255,255,255,0.09)" stroke-width="1.5"/>
+          <rect x="26" y="49" width="68" height="22" rx="11" fill="#111113" stroke="rgba(0,0,0,0.6)" stroke-width="1.5"/>
+          <circle cx="60" cy="60" r="7.5" fill="#ff453a" filter="url(#c2-glow)"/>
+          <circle cx="60" cy="60" r="2.5" fill="#ffffff" opacity="0.9"/>
+          <line x1="35" y1="56" x2="35" y2="64" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="85" y1="56" x2="85" y2="64" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="concept-title">2. The Precision Visor</div>
+      <div class="concept-tagline">Architectural Hardware Squircle</div>
+      <p class="concept-desc">
+        A refinement of the iconic hardware scanner visor. Anchored in a deep matte squircle tile with precision acoustic tick marks and a centered, unblinking crimson optical pulse that suggests vigilant background autonomy.
+      </p>
+      <ul class="principles-list">
+        <li><span class="bullet"></span> Pure centered mass with zero tilt or drift</li>
+        <li><span class="bullet"></span> Teenage Engineering / Dieter Rams hardware feel</li>
+        <li><span class="bullet"></span> Directly recognizable at favicon and billboard scales</li>
+      </ul>
+    </div>
+
+    <!-- CONCEPT 3 -->
+    <div class="card">
+      <div class="preview-box">
+        <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="c3-glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <circle cx="60" cy="60" r="38" stroke="#2c2c32" stroke-width="4.5"/>
+          <path d="M 28 60 A 32 32 0 0 1 92 60" stroke="#44444a" stroke-width="4.5" stroke-linecap="round"/>
+          <path d="M 28 60 A 32 32 0 0 0 92 60" stroke="#44444a" stroke-width="4.5" stroke-linecap="round"/>
+          <line x1="60" y1="26" x2="60" y2="44" stroke="rgba(255,255,255,0.15)" stroke-width="2" stroke-linecap="round"/>
+          <line x1="60" y1="76" x2="60" y2="94" stroke="rgba(255,255,255,0.15)" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="60" cy="60" r="7.5" fill="#ff453a" filter="url(#c3-glow)"/>
+          <circle cx="60" cy="60" r="3" fill="#fff"/>
+        </svg>
+      </div>
+      <div class="concept-title">3. The Orbital Meridian</div>
+      <div class="concept-tagline">Radial & Axial Symmetry</div>
+      <p class="concept-desc">
+        A concentric dual-hemisphere orbital track with 4-way balance. Represents continuous operational cycles (reporting, leads, invoices) cycling seamlessly around the central human command station.
+      </p>
+      <ul class="principles-list">
+        <li><span class="bullet"></span> Quad-fold geometric and rotational equilibrium</li>
+        <li><span class="bullet"></span> Seamless continuous operational loop concept</li>
+        <li><span class="bullet"></span> Clean, modern Swiss modernist aesthetic</li>
+      </ul>
+    </div>
+
+    <!-- CONCEPT 4 -->
+    <div class="card">
+      <div class="preview-box">
+        <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="c4-glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <rect x="25" y="38" width="16" height="44" rx="8" fill="#29292e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+          <circle cx="33" cy="60" r="2.5" fill="#636366"/>
+          <rect x="79" y="38" width="16" height="44" rx="8" fill="#29292e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+          <circle cx="87" cy="60" r="2.5" fill="#636366"/>
+          <rect x="51" y="24" width="18" height="72" rx="9" fill="#323238" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+          <circle cx="60" cy="46" r="5.5" fill="#ff453a" filter="url(#c4-glow)"/>
+          <circle cx="60" cy="46" r="2" fill="#fff"/>
+          <line x1="60" y1="62" x2="60" y2="82" stroke="rgba(255,255,255,0.12)" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="concept-title">4. The Tri-System Monolith</div>
+      <div class="concept-tagline">Three Autonomous Engines</div>
+      <p class="concept-desc">
+        A direct architectural manifestation of the three systems: System 01 (Reporting), System 02 (Leads), and System 03 (Invoices). Bilaterally balanced with flanking companion wings and an elevated central anchor.
+      </p>
+      <ul class="principles-list">
+        <li><span class="bullet"></span> 1:1 mirror correspondence across the center spine</li>
+        <li><span class="bullet"></span> Direct semantic link to the product architecture</li>
+        <li><span class="bullet"></span> Confident, grounded architectural stability</li>
+      </ul>
+    </div>
+
+    <!-- CONCEPT 5 -->
+    <div class="card">
+      <div class="preview-box">
+        <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="c5-glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <path d="M 60 18 L 94 38 L 94 82 L 60 102 L 26 82 L 26 38 Z" stroke="#2c2c32" stroke-width="3" fill="none"/>
+          <path d="M 38 48 L 48 60 L 38 72" stroke="#505058" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 82 48 L 72 60 L 82 72" stroke="#505058" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="60" cy="60" r="7" fill="#ff453a" filter="url(#c5-glow)"/>
+          <circle cx="60" cy="60" r="2.5" fill="#fff"/>
+        </svg>
+      </div>
+      <div class="concept-title">5. The Convergence Gate</div>
+      <div class="concept-tagline">Converging Inflow to Central Node</div>
+      <p class="concept-desc">
+        A clean hexagonal geometric framework with mirrored inward chevron guides pointing to the central red approval station. Captures the transition from chaotic external data inputs into streamlined, centered order.
+      </p>
+      <ul class="principles-list">
+        <li><span class="bullet"></span> Hexagonal geometric symmetry with zero pitch/tilt</li>
+        <li><span class="bullet"></span> Inward directional flow symbolizing data synthesis</li>
+        <li><span class="bullet"></span> Sharp, engineered tech aesthetic</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
